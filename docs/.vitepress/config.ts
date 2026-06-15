@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar'
 
 const vitepressConfig = {
+  base: "/KnowledgeBase/",
   title: "陌北笔记",
   description: "记录个人学习笔记",
   head: [
