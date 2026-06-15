@@ -1,0 +1,65 @@
+/* 1. 侧边栏整体容器 */
+.VPSidebar {
+  border-right: 1px solid #e9ecef !important;
+}
+
+.VPNavBarTitle .title>span {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin-left: .5rem !important;
+  color: #2c3e50 !important;
+}
+
+/* logo */
+.VPNavBarTitle img {
+  height: 2.5rem !important;  /* 调整大小 */
+}
+
+/* 2. 分组标题（一级） */
+.VPSidebarGroup .group-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  padding: 0.5rem 1.25rem !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  transition: all 0.2s !important;
+}
+.VPSidebarGroup .group-title:hover {
+  background-color: #e9ecef !important;
+}
+
+/* 3. 折叠图标美化 */
+.VPSidebarGroup .arrow {
+  color: #6c757d !important;
+  transition: transform 0.2s !important;
+}
+.VPSidebarGroup.is-active .arrow {
+  transform: rotate(90deg) !important;
+}
+
+/* 4. 菜单项（二级及以下） */
+.VPSidebarItem .item {
+  font-size: 0.9rem !important;
+  color: #495057 !important;
+  padding: .4rem 1.25rem .4rem 0 !important; /* 缩进层级 */
+  border-radius: 4px !important;
+  transition: all 0.2s !important;
+}
+.VPSidebarItem .item:hover {
+  background-color: #e9ecef !important;
+  color: #2c3e50 !important;
+}
+
+/* 5. 当前激活页面高亮 */
+.VPSidebarItem.is-active .item {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+/* 6. 移除默认丑陋的下划线、边框 */
+.VPSidebar a {
+  text-decoration: none !important;
+  border: none !important;
+}
