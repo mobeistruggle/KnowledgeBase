@@ -30,14 +30,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 18
+          cache: "npm"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: npm ci # 使用 ci 比 install 更快更稳定
+        run: npm install
 
       - name: Build with VitePress
         run: |
